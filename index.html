@@ -11,9 +11,16 @@
 
     gtag('config', 'G-VNJX66Z0YF');
   </script>
+
+  <!-- TỰ ĐỘNG CHUYỂN HƯỚNG SANG LOGIN.HTML NGHAY LẬP TỨC -->
+  <meta http-equiv="refresh" content="0; url=login.html" />
+  <script>
+    window.location.href = "login.html";
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MindX Cinema</title>
+  <title>MindX Cinema - Login Redirect</title>
   <link rel="shortcut icon" href="./assets/icon.png" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <!-- Google Fonts Link For Icons -->
@@ -28,11 +35,6 @@
 </head>
 
 <body>
-
-  <!-- <div class="backdrop">
-    <img src="./assets/loading.svg" alt="" />
-  </div> -->
-
 
   <div class="navbar">
     <a href="./index.html" style="
@@ -50,53 +52,26 @@
       <div id="avatar-action-container"></div>
     </div>
   </div>
-  <div class="hero-section">
-    <img id="hero-image" class="hero-image fade-in" onload="this.style.opacity = '0.5'" alt="" />
 
+  <div class="hero-section">
     <div class="hero-section-info">
       <div>
-        <p id="hero-title" class="hero-section-info-title"></p>
-        <p id="hero-description" class="hero-section-info-description multiline-ellipsis-4"></p>
+        <p class="hero-section-info-title">Redirecting to Login...</p>
+        <p class="hero-section-info-description">Đang chuyển hướng sang trang đăng nhập...</p>
         <div class="action-buttons-container">
-          <a id="watch-now-btn" class="btn">
-            <i class="fa-regular fa-circle-play"></i>
-            <span>Watch Now</span>
-          </a>
-          <a id="view-info-btn" class="btn">
-            <i class="fa-solid fa-circle-info"></i>
-            <span>View Info</span>
+          <a href="./login.html" class="btn">
+            <i class="fa-solid fa-right-to-bracket"></i>
+            <span>Bấm vào đây nếu không tự chuyển</span>
           </a>
         </div>
       </div>
     </div>
-    <div class="hero-preview-img-container">
-      <img class="fade-in" onload="this.style.opacity = '1'" id="hero-preview-image" alt="" />
-    </div>
   </div>
-
-  
-  <main></main>
 
   <footer>
     <p>Copyright &copy; MindX School</p>
-    <div>
-      <p>Contact:</p>
-      <a target="_blank" rel="noopener noreferrer" href="#">
-        <i class="fa-brands fa-github"></i>
-      </a>
-      <a target="_blank" rel="noopener noreferrer" href="#">
-        <i class="fa-brands fa-facebook"></i>
-      </a>
-      <a target="_blank" rel="noopener noreferrer" href="#">
-        <i class="fa-brands fa-instagram"></i>
-      </a>
-    </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <script type="module" src="./scripts/config.js"></script>
-  <script type="module" src="./scripts/home.js"></script>
 </body>
 
 </html>
